@@ -1,0 +1,432 @@
+<!-- clone of gunpur college organisation website. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>clone of gunpur college</title>
+</head>
+<style>
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+}
+  .header-section{
+      width:100%;
+      height:70px;
+      background-color:#650000;
+      display:flex;
+      border-bottom:1px solid #c56d0a;
+   }
+   .header-notification{
+      width:120px;
+      height:35px;
+      background:#84c340;
+      text-transform:uppercase;
+      color:white;
+      padding:15px 15px;
+      font-size:14px;
+      margin-left:50px;
+      margin-top:30px;
+      justify-items:center;
+      justify-content:center;
+      align-items: center;
+      display:flex;
+      text-align:center;
+      
+   }
+   .background-body{
+      height:490px;
+      background-image:linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url("/s2.jpg");
+      background-position:center;
+      background-size:cover;
+      position:relative;
+      justify-content: center;
+      
+   }
+   .gunpur-logo-img{
+      width:220px;
+      margin-left: 50px;
+      margin-top:8px;
+      color:white;
+   }
+   .nav-home{
+      height:80px;
+      width:800px;
+      background-color:transparent;
+      margin-top:30px;
+      margin-left:100px;
+   }
+   .inside-nav1{
+      background-color:transparent;
+      margin:20px;
+      display:inline;
+      padding:6px;
+      color:white;
+      text-transform:uppercase;
+      font-weight:bold;
+   }
+   .gunpur-college-font{
+      background-color:transparent;
+      padding:4px;
+      margin-top:25px;
+      margin-left:250px;
+      font-size:50px;
+      color:white;
+      font-weight:bold;
+      align-items:center;
+      justify-content:center;
+   }
+   .gunpur-college-font2{
+      background-color:transparent;
+      padding:4px;
+      margin-top:4px;
+      margin-left:310px;
+      font-size:22px;
+      color:white;
+      font-weight:bold;
+      align-items:center;
+      justify-content:center;
+   }
+   .notifi-bar{
+      width:100%;
+      height:70px;
+      background-color:#650000;
+      margin-top:2px;
+      
+   }
+   .principal-desk{
+      width:450px;
+      height:300px;
+      background-color:#e7e7e7;
+      margin-top:20px;
+   }
+   marquee{
+      color:yellow;
+      font-weight:bold;
+      text-align:center;
+      align-content:center;
+      padding:20px;
+      font-size:18px;
+   }
+   .principal-desk-header{
+      
+      width:350px;
+      height:50px;
+      font-size:35px;
+      color:#650000;
+      padding:8px;
+      margin-left:15px;
+      margin-top:10px;
+      text-decoration:none;
+      font-weight:300;
+   }
+   .principal-desk-name{
+   
+      width: 250px;
+      height:30px;
+      font-size: 20px;
+      color: #650000;
+      padding: 0px;
+      margin-left: 200px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom:1px solid #650000;
+   }
+   .principal-desk-bio{
+   
+      width: 250px;
+      height:30px;
+      font-size: 18px;
+      color: #650000;
+      padding: 0px;
+      margin-left: 200px;
+      margin-top: 35px;
+     
+      text-decoration: none;
+      
+   }
+   .principal-desk-bio1{
+   
+      width: 250px;
+      height:30px;
+      font-size: 18px;
+      color: #650000;
+      padding: 0px;
+      margin-left: 200px;
+      margin-top: 0px;
+      margin-bottom:30px;
+      text-decoration: none;
+      padding:0px;
+      
+   }
+   .principal-desk-bio2{
+   
+      width: 100px;
+      height:30px;
+      font-size: 16px;
+      color: white;
+      background-color:grey;
+      padding: 0px;
+      margin-left: 200px;
+      margin-top: 0px;
+      margin-bottom:30px;
+      text-decoration: none;
+      padding:8px 8px 8px 8px;
+      border-radius:2px;
+      text-align:center;
+      justify-content:center;
+      align-items:center;
+      
+   }
+   .principal-body{
+      display:flex;
+   }
+   .vision-heading{
+      
+      font-weight:270;
+      width:500px;
+      height:300px;
+      margin-top:20px;
+      margin-left:20px;
+      font-size:45px;
+      space-between:3.5px;
+      padding:8px;
+     
+      
+   }
+   .vision-heading-1{
+       color:#650000;
+      font-weight:270;
+      width:485px;
+      height:75px;
+      margin-top:0px;
+      margin-left:0px;
+      font-size:45px;
+      space-between:3.5px;
+      padding:10px;
+      border-bottom:1px solid black;
+      
+   }
+   .vision-heading-3{
+       color:#650000;
+      font-weight:270;
+      width:485px;
+      height:75px;
+      margin-top:0px;
+      margin-left:0px;
+      font-size:45px;
+      space-between:3.5px;
+      padding:10px;
+     border-bottom:1px solid black;
+      
+   }
+   .vision-heading-2{
+      color:#650000;
+      font-weight:500;
+      width:485px;
+      height:70px;
+      margin-top:2px;
+      margin-left:0px;
+      font-size:15px;
+      space-between:3.5px;
+      padding:4px;
+     
+      
+   }
+   .vision-heading-4{
+      
+      color:#650000;
+      font-weight:500;
+      width:485px;
+      height:60px;
+      margin-top:2px;
+      margin-left:0px;
+      font-size:15px;
+      space-between:3.5px;
+      padding:4px;
+      
+      
+   }
+      
+   .college-video-body{
+      margin-top:10px;
+      height:265px;
+      width:985px;
+     
+      display:flex;
+   }
+   .college-video-content1{
+      height:250px;
+      width:480px;
+      padding:4px;
+      justify-content:center;
+      align-items:center;
+     
+      margin:6px;
+   }
+
+  /*  .heading-texts{
+     color:white;
+     display:inline;
+  } */
+  
+  
+  /* this is wing section css */
+  .wing-section-container{
+     height:250px;
+     width:980px;
+    background-color:#e7e7e7;
+     display:flex;
+     justify-content:space-evenly;
+     justify-content:center;
+     box-shadow: 1px 1px 2px 2px  #a19da4;
+  }
+  .wing-section-1{
+     height:200px;
+     width:400px;
+     background-color:white;
+     justify-content:center;
+     margin-top:28px;
+     margin-left:20px;
+     border-radius:20px;
+     box-shadow: 1px 2px 4px 1px   #a19da4;
+  }
+    .wing-section-1:hover{
+       box-shadow: 1px 2px 12px 1px   #a19da9;
+    }
+/*   this is the wing section inside css  */
+.wings-section-1-text-1{
+   height:80px;
+   width:380px;
+   background-color:white;
+   align-items: center;
+   margin:10px;
+   margin-top:14px;
+   color:black;
+   font-size:38px;
+   font-weight:bold;
+   padding-left:24px;
+   padding-top:20px;
+   text-align:center;
+   letter-spacing:1.5px;
+   
+}
+.footer-section{
+   height:400px;
+   width:980px;
+   background-color:white;
+   
+}
+.copy-right-section{
+   height:24px;
+   width:980px;
+   background-color:black;
+   color:white;
+   padding:4px;
+
+}
+</style>
+<body>
+   <div class="header-section">
+<!--       <span class"heading-texts">vikashmahanandia@gmail.com</span> -->
+
+      <div class="header-notification">
+          notification
+      </div>
+      
+   </div>
+   <div class="background-body">
+      <div class="logo-gunpur">
+         <img class="gunpur-logo-img"src="/logo_final_NEW1.png" alt="gunpur-logo"/>
+      </div>
+      <div class="nav-home">
+         <div class="inside-nav1">home</div>
+         <div class="inside-nav1">about us</div>
+         <div class="inside-nav1">academics</div>
+         <div class="inside-nav1">department</div>
+         <div class="inside-nav1">facilities</div>
+         <div class="inside-nav1">naac</div>
+      </div>
+      <div class="gunpur-college-font">
+         GUNUPUR COLLEGE
+      </div>
+      <div class="gunpur-college-font2">
+         Affiliated to Berhampur University (+3)
+      </div>
+      
+   </div>
+   <div class="notifi-bar">
+      <marquee>Disclaimer This is a clone page of gunpur colleg org. Information provided are not correct </marquee>
+   </div>
+   <div class="principal-body">
+      
+   
+   <div class="principal-desk">
+       <div class="principal-desk-header">Principal's Desk</div>
+       <div class="principal-desk-name">Dr. shyam sunder mohanta</div>
+       <div class="principal-desk-bio">Mtech,(Principal I/C),</div>
+       <div class="principal-desk-bio1">Principal, Gunupur College</div>
+       <div class="principal-desk-bio2">Read More</div>
+   </div>
+   <div class="vision-heading">
+       <div class="vision-heading-1">
+      Vision
+       </div>
+       <div class="vision-heading-2">
+      To promote qualitative value-based application-oriented courses to cope with the changes of modern time for the betterment of students and society.
+       </div>
+        <div class="vision-heading-3">
+           Mission
+        </div>
+        <div class="vision-heading-4">
+           To give qualitative education, building noble character and preparing the learners to serve society.
+         </div>
+        
+   </div>
+   </div>
+   
+  <!--  this the webpage video page section  -->
+   <div class="college-video-body">
+      <div class="college-video-content1">
+
+   <iframe width="480" height="250" src="https://www.youtube.com/embed/tJbEKWMPJu0" title="YouTube video player"</iframe>
+
+         
+      </div>
+      <div class="college-video-content1">
+         
+<iframe width="480" height="250" src="https://www.youtube.com/embed/tJbEKWMPJu0" title="YouTube video player"</iframe>
+         
+      </div>
+      
+   </div>
+<!--    this wings section  -->
+<div class="wing-section-container">
+    <div class="wing-section-1">
+       <div class="wings-section-1-text-1">
+          +3 wings
+       </div>
+       <div class="wings-section-1-text-2">
+          
+       </div>
+    </div>
+    <div class="wing-section-1">
+       
+    </div>
+   
+</div>
+<!-- this is footer sectio -->
+<div class="footer-section">
+   
+</div>
+<!-- this is copy right section -->
+<div class="copy-right-section">
+   <tt>All right reserved 2023 , Department of computer science ,Gunpur college gunpur Developed and Designed by Bikash mahanandia</tt>
+</div>
+</body>
+</html>
